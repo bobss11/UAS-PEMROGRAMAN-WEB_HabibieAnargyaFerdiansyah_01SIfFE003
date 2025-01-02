@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplikasi Perpustakaan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <img src="logo.png" alt="Logo Perpustakaan">
+        <nav>
+            <ul>
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="transaksi.html">Transaksi</a></li>
+                <li><a href="profil.html">Profil</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Halaman Transaksi -->
+    <div class="container">
+        <h1>Transaksi</h1>
+        <form id="transaksiForm" action="#" method="POST">
+            <div class="form-group">
+                <label for="nama">Nama Transaksi</label>
+                <input type="text" id="nama" name="nama" required>
+            </div>
+            <div class="form-group">
+                <label for="jumlah">Jumlah</label>
+                <input type="number" id="jumlah" name="jumlah" required min="1">
+            </div>
+            <div class="form-group">
+                <label for="kategori">Kategori</label>
+                <select id="kategori" name="kategori" required>
+                    <option value="">-- Pilih Kategori --</option>
+                    <option value="Buku">Buku</option>
+                    <option value="Majalah">Majalah</option>
+                    <option value="DVD">DVD</option>
+                </select>
+            </div>
+            <button type="submit">Simpan</button>
+
+        <!-- Transaction Table -->
+        <table>
+            <thead>
+                <tr>
+                    <th>Nama Transaksi</th>
+                    <th>Jumlah</th>
+                    <th>Kategori</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Contoh Transaksi</td>
+                    <td>5</td>
+                    <td>Buku</td>
+                </tr>
+                <!-- More rows can be added here dynamically -->
+            </tbody>
+        </table>
+    </div>
+
+    <footer>
+        <p style="color: beige;">&copy; 2025 Perpustakaan Digital. Semua Hak Dilindungi.</p>
+    </footer>
+
+    <!-- Link to external JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
